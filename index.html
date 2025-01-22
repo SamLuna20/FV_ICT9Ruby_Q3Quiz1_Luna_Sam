@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kdam Thmor Pro"
+      rel="stylesheet"
+    />
+    <title>Q3 Quiz1</title>
+
+    <script>
+      var a = 2;
+      var b = 4;
+      var c = a * b;
+      var d = a / b;
+    </script>
+
+    <style>
+      body {
+        font-family: Arial;
+        background-image: url("https://img.freepik.com/free-vector/pride-gradient-1_78370-282.jpg");
+        padding: 30px;
+        background-size: cover;
+      }
+
+      .container {
+        background: whitesmoke;
+        padding: 30px;
+        border-radius: 40px;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 2);
+        text-align: center;
+        border: 5px dotted black;
+      }
+
+      h1 {
+        font-family: "Kdam Thmor Pro" !important;
+        font-size: 33px;
+      }
+
+      #yellow,
+      #green,
+      #red {
+        background-color: #f2eea7;
+        width: 50%;
+        padding: 5%;
+        margin: 0 auto;
+        border-radius: 40px;
+      }
+
+      #green {
+        background-color: #c2f5bc !important;
+      }
+
+      #red {
+        background-color: #faa5b7 !important;
+      }
+
+      h3 {
+        background-color: #333332;
+        color: whitesmoke;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img
+        src="https://media.istockphoto.com/id/1365557248/vector/mathematics-colorful-typography-banner.jpg?s=612x612&w=0&k=20&c=kT5Jo1p3bILbIw7VDeQB1vHWHPsO_TSP4hUXjx6uXJE="
+        style="width: 400px; height: 70px"
+      />
+      <br /><br />
+      <div class="container">
+        <h3><strong> 🏳️‍🌈 NOTE: a = 2 and b = 4 🏳️‍🌈 </strong></h3>
+        <br />
+
+        <div id="yellow">
+          <h1 style="text-align: center; font-family: arial">
+            <strong>Arithmetic Operator</strong>
+          </h1>
+          <p><strong>MDAS? We gotchu!</strong></p>
+          <br />
+          <p id="display">1. What is a multiplied by b?</p>
+          <p id="display2">2. What is the quotient of a divided by b?</p>
+          <button
+            type="button"
+            class="btn btn-warning"
+            onclick="document.getElementById('display'). innerHTML = c; document.getElementById('display2'). innerHTML = d;">Reveal Correct Answers</button>
+        </div>
+        <br /><br />
+
+        <div id="green">
+          <h1 style="text-align: center; font-family: arial">
+            <strong>Comparison Operator</strong>
+          </h1>
+          <p><strong>Let's compare the values!</strong></p>
+          <br />
+          <p id="display3">1. Is a less than b?</p>
+          <p id="display4">2. Is a greater than or equal to b?</p>
+          <button
+            type="button"
+            class="btn btn-success"
+            onclick="document.getElementById('display3'). innerHTML = a < b ; document.getElementById('display4'). innerHTML = a >= b ;">Reveal Correct Answers</button>
+        </div>
+        <br /><br />
+
+        <div id="red">
+          <h1 style="text-align: center; font-family: arial">
+            <strong>Logical Operator</strong>
+          </h1>
+          <p><strong>True? False? Ask away!</strong></p>
+          <br />
+          <p id="display5">1. (a < b) || (a == b):</p>
+          <p id="display6">2. (a >= b) && (a != b):</p>
+          <button
+            type="button"
+            class="btn btn-danger"
+            onclick="document.getElementById('display5'). innerHTML = (a < b) || (a == b) ; document.getElementById('display6'). innerHTML = (a >= b) && (a != b);">Reveal Correct Answers</button>
+        </div>
+        <br />
+      </div>
+    </center>
+  </body>
+</html>
